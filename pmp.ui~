@@ -1,0 +1,415 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>PMPFrontend</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>PMPFrontend</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>67</x>
+            <y>107</y>
+            <width>400</width>
+            <height>300</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>109</width>
+            <height>180</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>400</width>
+            <height>300</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>PMP Server</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTabWidget" row="0" column="0">
+            <property name="name">
+                <cstring>tab</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab_status</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Status</string>
+                </attribute>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frame</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>10</y>
+                            <width>342</width>
+                            <height>157</height>
+                        </rect>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Raised</enum>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>text_action</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>11</x>
+                                <y>40</y>
+                                <width>320</width>
+                                <height>21</height>
+                            </rect>
+                        </property>
+                        <property name="frameShape">
+                            <enum>TabWidgetPanel</enum>
+                        </property>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>text_status</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>11</x>
+                                <y>94</y>
+                                <width>320</width>
+                                <height>21</height>
+                            </rect>
+                        </property>
+                        <property name="frameShape">
+                            <enum>TabWidgetPanel</enum>
+                        </property>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                    </widget>
+                    <widget class="QProgressBar">
+                        <property name="name">
+                            <cstring>progress_bar</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>11</x>
+                                <y>121</y>
+                                <width>320</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>text_filename</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>11</x>
+                                <y>67</y>
+                                <width>320</width>
+                                <height>21</height>
+                            </rect>
+                        </property>
+                        <property name="frameShape">
+                            <enum>TabWidgetPanel</enum>
+                        </property>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                    </widget>
+                    <spacer>
+                        <property name="name">
+                            <cstring>spacer4</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>250</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>81</x>
+                                <y>12</y>
+                                <width>250</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                    </spacer>
+                    <widget class="QLCDNumber">
+                        <property name="name">
+                            <cstring>lCDNumber1</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>11</x>
+                                <y>11</y>
+                                <width>64</width>
+                                <height>23</height>
+                            </rect>
+                        </property>
+                        <property name="frameShape">
+                            <enum>TabWidgetPanel</enum>
+                        </property>
+                        <property name="numDigits">
+                            <number>6</number>
+                        </property>
+                    </widget>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab_config</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Config</string>
+                </attribute>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>40</height>
+                        </size>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>168</x>
+                            <y>43</y>
+                            <width>20</width>
+                            <height>114</height>
+                        </rect>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>button_select</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>292</x>
+                            <y>11</y>
+                            <width>71</width>
+                            <height>26</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Select</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineedit_directory</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>12</y>
+                            <width>275</width>
+                            <height>24</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>button_restart</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>239</x>
+                            <y>163</y>
+                            <width>124</width>
+                            <height>26</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Restart Server</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>button_start</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>124</x>
+                            <y>163</y>
+                            <width>109</width>
+                            <height>26</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Start Server</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>button_stop</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>163</y>
+                            <width>107</width>
+                            <height>26</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Stop Server</string>
+                    </property>
+                </widget>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>MenuBar</cstring>
+    </property>
+    <item text="&amp;File" name="fileMenu">
+        <action name="fileSaveAction"/>
+        <separator/>
+        <separator/>
+        <action name="fileExitAction"/>
+    </item>
+    <item text="&amp;Help" name="helpMenu">
+        <separator/>
+        <action name="helpAboutAction"/>
+    </item>
+</menubar>
+<toolbars>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image0</iconset>
+        </property>
+        <property name="text">
+            <string>Save</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Save</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+S</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileExitAction</cstring>
+        </property>
+        <property name="text">
+            <string>Exit</string>
+        </property>
+        <property name="menuText">
+            <string>E&amp;xit</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpAboutAction</cstring>
+        </property>
+        <property name="text">
+            <string>About</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;About</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+</actions>
+<images>
+    <image name="image0">
+        <data format="PNG" length="217">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000000a049444154388dd5954d0a802010859fd14668e18de662d222bc98376a21b4ac451992c66469e0b7f187f1f11c47052a218e762daddbfb9e99f6568f80b5364b8588ce35440400e80a398ce8f99034d2292cc37c8ebd530feb583a05e954341f8a027b2a7d3a1f09bf854dc5d5d953aa396e4f38cab199e2d2e108abe156f82e30977fcb4d8ff942d75dbebed2e143953a93f6caad3d6111f44b7d4f820ff9c0069bb51ecded318c5c0000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>fileSaveAction</sender>
+        <signal>activated()</signal>
+        <receiver>PMPFrontend</receiver>
+        <slot>fileSave()</slot>
+    </connection>
+    <connection>
+        <sender>fileExitAction</sender>
+        <signal>activated()</signal>
+        <receiver>PMPFrontend</receiver>
+        <slot>fileExit()</slot>
+    </connection>
+    <connection>
+        <sender>helpAboutAction</sender>
+        <signal>activated()</signal>
+        <receiver>PMPFrontend</receiver>
+        <slot>helpAbout()</slot>
+    </connection>
+    <connection>
+        <sender>button_select</sender>
+        <signal>clicked()</signal>
+        <receiver>PMPFrontend</receiver>
+        <slot>selectDir()</slot>
+    </connection>
+    <connection>
+        <sender>button_restart</sender>
+        <signal>clicked()</signal>
+        <receiver>PMPFrontend</receiver>
+        <slot>restartServer()</slot>
+    </connection>
+    <connection>
+        <sender>button_start</sender>
+        <signal>clicked()</signal>
+        <receiver>PMPFrontend</receiver>
+        <slot>startServer()</slot>
+    </connection>
+    <connection>
+        <sender>button_stop</sender>
+        <signal>clicked()</signal>
+        <receiver>PMPFrontend</receiver>
+        <slot>stopServer()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>fileSave()</slot>
+    <slot>fileExit()</slot>
+    <slot>helpAbout()</slot>
+    <slot>selectDir()</slot>
+    <slot>restartServer()</slot>
+    <slot>stopServer()</slot>
+    <slot>startServer()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
